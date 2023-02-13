@@ -5,13 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
     --color-blue: #55828B;
     --color-white: #FFFEFF;
     --color-black: #051014;
     --color-grey: #2E2F2F;
     --color-pink: #E76B74;
 
+}
+
+:root {
+    background: #fff url("/src/assets/bg.png") center center no-repeat fixed;
+    background-size: cover;
 }
 
 .main {

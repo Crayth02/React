@@ -1,7 +1,3 @@
-main.right {
-
-}
-
 main.right > h1 {
     text-align: center;
     border-bottom: 0.02rem solid black;
@@ -20,6 +16,7 @@ article.card {
     max-width: 550px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(61, 61, 61, 0.6);
     margin: 20px;
     padding: 10px;
 }
@@ -27,9 +24,7 @@ article.card {
 article.card .card__header {
     text-align: center;
 }
-article.card .card__header__div {
 
-}
 article.card .card__header__div__img {
     border-radius: 50%;
 }
@@ -44,5 +39,5 @@ article.card .card__infos__line {
     margin: 10px 0;
     padding: 10px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-
+    background-color: rgba(137, 125, 125, 0.779);
 }

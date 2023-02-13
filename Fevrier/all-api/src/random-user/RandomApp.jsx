@@ -23,7 +23,6 @@ const RandomApp = () => {
             })
     }, [])
 
-
     return (
         <main className="right">
             <h1>Random User</h1>
