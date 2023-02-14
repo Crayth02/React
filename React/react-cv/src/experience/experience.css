@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-width: 320px;
+}
+
+main#app header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: dodgerblue;
+  color: white;
+}
+main#app header div.header {
+  text-align: center;
+}
+main#app header div.header div.header__image {
+  width: 60%;
+  height: 60%;
+  margin: 10px auto;
+}
+main#app header div.header div.header__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+main#app header div.header h1.header__name {
+  display: none;
+}
+main#app header nav {
+  margin-top: 30px;
+}
+main#app header nav ul {
+  list-style-type: none;
+}
+main#app header nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70px;
+  padding: 0 10px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  transition: font-size 100ms ease-in-out, background-color 100ms ease-in-out;
+}
+main#app header nav ul li a:hover {
+  background-color: rgba(0, 191, 255, 0.2);
+  font-size: 1.2rem;
+}
+main#app header nav ul li a span {
+  display: block;
+}
+main#app header nav ul li a span.link {
+  margin-left: 10px;
+  display: none;
+}
+main#app section {
+  padding-left: 80px;
+  padding-right: 20px;
+  min-height: 100vh;
+}
+main#app section.home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+main#app section.home .home__image {
+  text-align: center;
+  margin: 20px;
+}
+main#app section.home .home__image img {
+  border-radius: 50%;
+}
+main#app section.home h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+main#app section.home p {
+  margin: 10px 0;
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+main#app section.home > article {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+main#app section.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+main#app section.experience article {
+  width: 100%;
+  text-decoration: underline;
+  text-decoration-color: dodgerblue;
+  text-decoration-thickness: 3px;
+  font-size: 0.9rem;
+  padding: 10px 0;
+}
+main#app section.contact {
+  display: flex;
+  justify-content: center;
+}
+main#app section.contact form {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main#app section.contact form .form__row {
+  width: 100%;
+  margin: 20px 0;
+}
+main#app section.contact form .form__row label {
+  font-size: 1.2rem;
+}
+main#app section.contact form .form__row .form__row__input {
+  margin-top: 10px;
+}
+main#app section.contact form .form__row .form__row__input input,
+main#app section.contact form .form__row .form__row__input textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 8px;
+  transition: transform 200ms ease-in-out;
+}
+main#app section.contact form .form__row .form__row__input input:hover,
+main#app section.contact form .form__row .form__row__input textarea:hover {
+  box-shadow: 2px 2px 20px rgb(100, 149, 237);
+}
+main#app section.contact form .form__row .form__row__input input::placeholder,
+main#app section.contact form .form__row .form__row__input textarea::placeholder {
+  color: dodgerblue;
+  font-size: 0.9rem;
+}
+main#app section.contact form .form__row .form__row__input input {
+  height: 40px;
+}
+main#app section.contact form .form__row .form__row__input textarea {
+  min-height: 150px;
+  height: 200px;
+  resize: vertical;
+}
+main#app section.contact form .form__row button {
+  width: 100%;
+  height: 50px;
+  background-color: dodgerblue;
+  font-size: 1.2rem;
+  color: white;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out;
+}
+main#app section.contact form .form__row button:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(0.98);
+}
+main#app section.portfolio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main#app section.portfolio article {
+  width: 33%;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 20px;
+}
+main#app section.portfolio article figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20%;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  background-color: transparent !important;
+  transition: box-shadow 200ms ease-in-out, border-radius 200ms ease-in-out;
+}
+main#app section.portfolio article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main#app section.portfolio article figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  backdrop-filter: blur(10px);
+}
+main#app section.portfolio article figure:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 1%;
+}
+
+@media screen and (min-width: 920px) {
+  main#app header {
+    width: 250px;
+  }
+  main#app header div.header h1.header__name {
+    display: block;
+  }
+  main#app header nav ul li a {
+    padding-left: 20%;
+    justify-content: inherit;
+  }
+  main#app header nav ul li a span.link {
+    display: block;
+  }
+  main#app section {
+    padding-left: 270px;
+  }
+  main#app section.experience article {
+    font-size: 1.3rem;
+  }
+  main#app section.contact form .form__row {
+    width: 70%;
+    max-width: 900px;
+  }
+}
