@@ -11,9 +11,9 @@ const Header = () => {
         <header>
         <div className="header">
             <div className="header__image">
-                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Jon SIMPSON" />
+                <img src="images/photo.jpg" alt="Melvin LENGLET" />
             </div>
-            <h1 className="header__name">Jon SIMPSON</h1>
+            <h1 className="header__name">Melvin LENGLET</h1>
         </div>
         <nav>
             <ul>

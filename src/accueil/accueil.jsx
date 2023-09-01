@@ -6,11 +6,13 @@ const Accueil = () => {
         <main id="app">
     <section className="home">
         <div className="home__image">
-            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Jon SIMPSON" />
+            <img src="images/photo.jpg" alt="Melvin LENGLET" />
         </div>
-        <h3>{data.firstname} {data.lastname}</h3>
-        <p>{data.description}</p>
-        <article>{data.title}</article>
+    <article className="user">
+        <h2>{data.firstname} {data.lastname}</h2>
+        <h3>{data.title}</h3>
+        <p style={{ whiteSpace: 'pre-line', lineHeight: '2' }}>{data.description}</p>
+    </article>
     </section>
 </main>
     )

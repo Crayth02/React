@@ -80,7 +80,15 @@ main#app section.home .home__image {
   margin: 20px;
 }
 main#app section.home .home__image img {
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
+}
+main#app section.home h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px 0;
+  margin-bottom: 30px;
 }
 main#app section.home h3 {
   text-align: center;
@@ -91,10 +99,11 @@ main#app section.home p {
   margin: 10px 0;
   font-weight: 800;
   text-decoration: underline;
+  text-align: center;
   font-size: 1.2rem;
 }
-main#app section.home > article {
-  text-align: justify;
+main#app section.home .user {
+  text-align: center;
   line-height: 1.5rem;
 }
 main#app section.experience {
